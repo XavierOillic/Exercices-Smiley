@@ -38,9 +38,9 @@ const buttonBis = document.querySelector("#bbb") // ICI, JE STOCKE LE LIEU OU SE
 
 //====> Je stxoke les images dans un objet. 1 = CLE // images/... = VALEUR
 const smileyAdress = {
-    1 : "images/smiley_1.png" ,
-    2 : "images/smiley_2.png" , 
-    3 : "images/smiley_3.png"
+    1 : "smiley_1" ,
+    2 : "smiley_2" , 
+    3 : "smiley_3"
 } 
 //console.log(smileyAdress) LA CONSOLE M'AFFICHE BIEN UN OBJET.
 buttonBis.addEventListener('click', changerSmiley) 
