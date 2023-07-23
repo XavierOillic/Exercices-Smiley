@@ -34,9 +34,8 @@ const backgroundColorBody = () => {
 
 const smileyPlaceType = document.querySelector("#smileyPlace") // JE STOCKE LE LIEU DU CHANGEMENT 
 const buttonBis = document.querySelector("#bbb") // ICI, JE STOCKE LE LIEU OU SE TROUVE LE BUTTON AVEC SON ID #bbb
-//const LaCleSmiley = (1, 2, 3)
 
-//====> Je stxoke les images dans un objet. 1 = CLE // images/... = VALEUR
+//====> Je stocke les images dans un objet. 1 = CLE // images/... = VALEUR
 const smileyAdress = {
     "1": "smiley_1" ,
     "2": "smiley_2" , 
@@ -45,7 +44,7 @@ const smileyAdress = {
 //console.log(smileyAdress) LA CONSOLE M'AFFICHE BIEN UN OBJET.
 buttonBis.addEventListener('click', changerSmiley) 
 function changerSmiley () {   // JE DECLARE MA FONCTION, SANS ATTRIBUT
-    let randomizeSmiley = (Math.floor(Math.random() * smileyAdress) +1).toString() // JE DECLARE ET STOCKE MON RANDOM
+    let randomizeSmiley = (Math.floor(Math.random() * 3) +1).toString() // JE DECLARE ET STOCKE MON RANDOM
     const x = smileyAdress[randomizeSmiley] // STOCKE l’ENDROIT OU JE FAIS LE RANDOM
     smileyPlaceType.innerHTML = `<img class="${x}" src="images/${x}.png" alt="${x}"/>` // 
 }
