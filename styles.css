@@ -17,14 +17,18 @@ header {
     margin-left : auto; 
     margin-right: auto;
     display: flex;
+    flex-direction: column;
     align-items: stretch;
+    height: auto;
 }
 
 content {
+    position: relative; 
     margin-left: auto;
     margin-right : auto;
     display : flex;
     flex-direction: column;
+    height: auto;
 }
 
 p {
@@ -76,12 +80,32 @@ a:active {}
     margin-left: auto;
     margin-right: auto;
 }
+
 .bouton {
     display: flex;
     height:100px; 
     width:100px; 
     margin-left: 20px; 
     margin-right: 40px;
-    margin-top: 20px;
 }
+
+.grand_titre {
+    display: flex;
+    flex-direction: row ;
+    align-items: center;
+    margin-left : auto; 
+    margin-right: auto;
+    background-color: #5D5050;
+    border-radius : 10px;
+}
+
+.plusieurs_bouttons {
+    display: flex;
+    flex-direction: row ;
+    align-items: center;
+    margin-left : auto; 
+    margin-right: auto;
+    position : relative;
+}
+
 
