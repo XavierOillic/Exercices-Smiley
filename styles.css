@@ -27,13 +27,17 @@ content {
     margin-left: auto;
     margin-right : auto;
     display : flex;
-    flex-direction: column;
+    flex-direction: row;
     height: auto;
 }
 
 p {
     justify-content: center;
     text-justify: center;    
+}
+h1 {
+    margin-left: 20px;
+    margin-right : 20px; 
 }
 
 
@@ -72,13 +76,23 @@ a:hover {
 a:focus {}
 a:active {}
 
+.contenant_smiley {
+    position : absolute;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .smiley {
-    /*background-image: image(src = "images/smiley_3.png"); */
+    position:relative;
+    display : flex;
+    float: right;
     background-color: #000000;
     border-radius: 2000px; 
     border: solid 10px black; 
     margin-left: auto;
     margin-right: auto;
+    height: auto;
 }
 
 .bouton {
@@ -96,7 +110,9 @@ a:active {}
     margin-left : auto; 
     margin-right: auto;
     background-color: #5D5050;
+    border : solid #630708 5px; 
     border-radius : 10px;
+    font-family: Cometbus, "Denne's Old Handwriting", "Dirty Ames Dirty Ames", "DIRTY CLASSIC";
 }
 
 .plusieurs_bouttons {
@@ -107,5 +123,59 @@ a:active {}
     margin-right: auto;
     position : relative;
 }
+
+.meteo_symboles {
+    display: flex;
+    float: left;
+    flex-direction: column;
+    position :relative;
+    height : auto;
+    width : 250px; 
+    border : solid #630708 5px; 
+    border-radius : 20px; 
+    padding : 10px;
+    background-color: #5D5050;
+}
+.texte_divers {
+    display: flex;
+    float: right;
+    flex-direction: row;
+    position : relative;
+    height : auto;
+    width : 500px; 
+    border : solid #630708 5px; 
+    border-radius : 20px; 
+    margin-top: 20px;
+    padding : 10px;
+    background-color: #5D5050;
+}
+.paris {
+    float : left; 
+    max-height: 150px;
+    margin-right: 5px;
+    margin-top: 5px;
+    align-items: center;
+}
+
+#divers {
+    background-image: image()
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 

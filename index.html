@@ -3,7 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <title>Udémy</title>
-<link href = "styles.css" rel="stylesheet">
+<link href = "styles.css" rel="stylesheet">    
+<link rel="icon" type="image/png" size="48x48" href="/favicon.ico">    
 </head>
 
 <body>
@@ -12,30 +13,54 @@
         <header>
             
             <div class = "grand_titre">
-                <h1> EXERCICES HTML CSS JS avec UDEMY et NEBRA</h1>
+                <h1> EXERCICES HTML / CSS / JS, avec UDEMY et NEBRA</h1>
             </div>
         
             <div class = "plusieurs_bouttons">
                 
-                <div class = "bouton">
-                    <img src="images/bouton_noir.png" alt = "bouton"/>
-                </div>
+                <button type = "button" id = "divers" > Click...</button>
                 
-                <button type ="button" id = "aaa"> Click to change <br/> SMILEY's color <br/> Background !</button>  
+                <button type = "button" id = "meteoTypeButton" > Click to change <br/> météo Icones</button>
                 
+                <button type ="button" id = "smileyBackgroundColor"> Click to change <br/> SMILEY's color <br/> Background !</button>  
                 <button type = "button" onclick = "backgroundColorBody();changerCouleur();"> Click to change <br/> BODY's et Smiley <br/> colors <br/> Background !</button>
                 
-                <button type = "button" id = "bbb"> Click to change <br/> Smiley's Type</button>
+                <button type = "button" id = "smileyTypeButton"> Click to change <br/> Smiley's Type</button>
                 
             </div>
             
         </header>
     
     
+    
+    
        <content>
-         
-            <div class = "smiley" id = "smileyPlace">
-                <img class = "smiley3" src = "images/smiley_1.png" alt = "smiley"/>
+           
+           <div class = "meteo_symboles" id = "meteoPlace" >
+               <img class = "meteo" src = "images_temps/ciel_12.png" alt = "image_meteo"/>
+               
+               <p> 
+                   <h2>"De Finibus Bonorum et Malorum" Ciceron (45 av.J.-C.)</h2>
+               
+"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut [...]"
+               </p>
+           
+           </div>   
+            <div class = "contenant_smiley">
+                    <div class = "smiley" id = "smileyPlace">
+                    <img class = "smiley3" src = "images/smiley_1.png" alt = "smiley"/>
+                    </div>
+            
+            <div class ="texte_divers">
+             <img src="images/paris.png" class = "paris" alt = "image_paris"/>
+                <p>
+                    
+"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni  [...]"
+                    
+                </p>
+                
+                </div>
+                
             </div>
 
        </content>

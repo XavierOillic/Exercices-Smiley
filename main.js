@@ -3,7 +3,8 @@
 //PREMIER BTN ===========> A D D  E V E N T  L I S T E N E R ==========>  pour CHANGER ALEATOIREMENT LA COULEUR DE FOND D'UNE DIV.
 
 const smileyPlace = document.querySelector ("#smileyPlace") 
-const button = document.querySelector ("button")
+
+const button = document.querySelector ("#smileyBackgroundColor")
 
 button.addEventListener('click', changerCouleurDerriereSmiley)
 function changerCouleurDerriereSmiley () {
@@ -33,7 +34,8 @@ const backgroundColorBody = () => {
 //===========> A D D  E V E N T  L I S T E N E R ==========>  pour CHANGER ALEATOIREMENT LE TYPE DE SmILEY
 
 const smileyPlaceType = document.querySelector("#smileyPlace") // JE STOCKE LE LIEU DU CHANGEMENT 
-const buttonBis = document.querySelector("#bbb") // ICI, JE STOCKE LE LIEU OU SE TROUVE LE BUTTON AVEC SON ID #bbb
+const buttonBis = document.querySelector("#smileyTypeButton") // ICI, JE STOCKE LE LIEU OU SE TROUVE LE BUTTON AVEC SON ID #bbb
+//const LaCleSmiley = (1, 2, 3)
 
 //====> Je stocke les images dans un objet. 1 = CLE // images/... = VALEUR
 const smileyAdress = {
@@ -43,6 +45,7 @@ const smileyAdress = {
 } 
 //console.log(smileyAdress) LA CONSOLE M'AFFICHE BIEN UN OBJET.
 buttonBis.addEventListener('click', changerSmiley) 
+
 function changerSmiley () {   // JE DECLARE MA FONCTION, SANS ATTRIBUT
     let randomizeSmiley = (Math.floor(Math.random() * 3) +1).toString() // JE DECLARE ET STOCKE MON RANDOM
     const x = smileyAdress[randomizeSmiley] // STOCKE l’ENDROIT OU JE FAIS LE RANDOM
@@ -50,11 +53,53 @@ function changerSmiley () {   // JE DECLARE MA FONCTION, SANS ATTRIBUT
 }
 changerSmiley()
 
+//=========================================================================================================================
+//=========================================================================================================================
+// PASSAGE ALEATOIRE DES ICONES METEO
 
-// classCiel.innerHTML = `<img class="${iconPerso}"src="image/${iconPerso}.png" alt="${iconPerso}"/>`
+const buttonTer = document.querySelector("#meteoTypeButton")
+const meteoPlace = document.querySelector("#meteoPlace")
+
+const icones = {
+	"1": "ciel_1" ,
+	"2": "ciel_2" ,	
+	"3": "ciel_3" ,			
+	"4": "ciel_4" ,	
+	"5": "ciel_5" ,	
+	"6": "ciel_6" ,			
+	"7": "ciel_7" ,
+	"8": "ciel_8" ,							
+	"9": "ciel_9" ,
+	"10": "ciel_10" ,				
+	"11": "ciel_11" ,				
+	"12": "ciel_12" ,		
+	"13": "ciel_13" , 		
+	"14": "ciel_14" ,	
+	"15": "ciel_15" ,	
+	"16": "ciel_16" ,
+    "17": "ciel_17" ,
+    "18": "ciel_18"
+} 
+
+buttonTer.addEventListener('click', changerMeteo) 
+
+function changerMeteo () {
+    //let randomizeMeteo = (Math.floor(Math.random() * (max - min +1)) + min)
+    let randomizeMeteo = (Math.floor(Math.random() * 18) + 1).toString()
+    //let randomizeMeteo = (Math.floor(Math.random() * icones.length) + 1)
+    const y = icones[randomizeMeteo]
+    meteoPlace.innerHMTL = `<img class="${y}" src="images_temps/${y}.png" alt="${y}"/>`
+   
+}
+changerMeteo()
+console.log(changerMeteo)
+ 
+//setInterval(randomIconesMeteo(), 1000 )
+//setTimeout ("randomIconesMeteo()", 1000 )
 
 
-
+//=========================================================================================================================
+//=========================================================================================================================
 
 
 
