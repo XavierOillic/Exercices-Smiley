@@ -3,67 +3,92 @@
 <head>
 <meta charset="UTF-8">
 <title>Udémy</title>
-<link href = "styles.css" rel="stylesheet">    
-<link rel="icon" type="image/png" size="48x48" href="/favicon.ico">    
+<link href = "styles.css" rel="stylesheet"/>    
+<link rel="icon" type="image/png" size="48x48" href="favicon.ico"/>    
 </head>
 
 <body>
 <container>
     
-        <header>
+    <header>
             
-            <div class = "grand_titre">
-                <h1> EXERCICES HTML / CSS / JS, avec UDEMY et NEBRA</h1>
+            <div class="grand_titre">
+                <h1 id="titre_principal"> EXERCICES HTML / CSS / JS,  avec UDEMY et NEBRA</h1>
             </div>
         
-            <div class = "plusieurs_bouttons">
+            <div class="plusieurs_bouttons">
                 
-                <button type = "button" id = "divers" > Click...</button>
+                <button type="button" id="divers"> Click...</button>
                 
-                <button type = "button" id = "meteoTypeButton" > Click to change <br/> météo Icones</button>
+                <button type="button" id="meteoTypeButton"> Click to change <br/> météo Icones</button>
                 
-                <button type ="button" id = "smileyBackgroundColor"> Click to change <br/> SMILEY's color <br/> Background !</button>  
-                <button type = "button" onclick = "backgroundColorBody();changerCouleur();"> Click to change <br/> BODY's et Smiley <br/> colors <br/> Background !</button>
+                <button type="button" id="smileyBackgroundColor"> Click to change <br/> SMILEY's color <br/> Background !</button>  
+                <button type="button" onclick="backgroundColorBody(); changerCouleur();"> Click to change <br/> BODY's et Smiley <br/> colors <br/> Background !</button>
                 
-                <button type = "button" id = "smileyTypeButton"> Click to change <br/> Smiley's Type</button>
+                <button type="button" id="smileyTypeButton"> Click to change <br/> Smiley's Type</button>
                 
             </div>
             
-        </header>
+    </header>
+    
+    <div class="liens" id="vers_pages">
+        <p class="lien_1"><a href="page2.html">Lien 1</a></p>
+        <p class="lien_2"><a href="page2.html">Lien 2</a></p>
+        <p class="lien_3"><a href="page2.html">Lien 3</a></p>
+        <p class="lien_4"><a href="page2.html">Lien 4</a></p>
+        <p class="lien_5"><a href="page2.html">Lien 5</a></p>
+        <p class="lien_6"><a href="page2.html">Lien 6</a></p>
+    </div>
     
     
     
     
-       <content>
-           
-           <div class = "meteo_symboles" id = "meteoPlace" >
-               <img class = "meteo" src = "images_temps/ciel_12.png" alt = "image_meteo"/>
+    <content>
+        <div class="encart_gauche">
                
-               <p> 
+               <div class="meteo_symboles">
+                       <div class="dessins_meteo" id="meteoPlace">
+                           <img class="meteo" src="images_temps/ciel_12.png" alt="image_meteo"/>
+                       </div>
+                   
+                   <p class="texte_meteo"> 
                    <h2>"De Finibus Bonorum et Malorum" Ciceron (45 av.J.-C.)</h2>
+                   
+"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem [...]"
+                   <br/> 
+"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem [...]
+                   <br/> 
+"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem [...]
+                   </p>
+                 
+               </div> 
                
-"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut [...]"
-               </p>
-           
-           </div>   
-            <div class = "contenant_smiley">
-                    <div class = "smiley" id = "smileyPlace">
-                    <img class = "smiley3" src = "images/smiley_1.png" alt = "smiley"/>
+           </div>
+    
+                <div class="contenant_smiley">
+                    <div class="smiley" id="smileyPlace">
+                        <img class="smiley3" src="images/smiley_1.png" alt="smiley"/>
                     </div>
             
-            <div class ="texte_divers">
-             <img src="images/paris.png" class = "paris" alt = "image_paris"/>
+            <div class="texte_divers">
+            <img src="images/paris.png" class="paris" alt="image_paris"/>
                 <p>
                     
 "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni  [...]"
                     
                 </p>
                 
-                </div>
-                
             </div>
-
-       </content>
+                
+        </div>
+    </content>
+    
+    
+    <footer>
+        <img class="footer_judo" src="images/footer_background.png" alt="judo_groupe"/>
+        
+    
+    </footer>
     
     
 	<script type="text/javascript" src="main.js"></script>

@@ -13,6 +13,7 @@ container {
     margin-left : auto; 
     margin-right: auto;
 }
+
 header {
     margin-left : auto; 
     margin-right: auto;
@@ -32,9 +33,12 @@ content {
 }
 
 p {
+    font-family: Arial;
+    font-size: 14px; 
     justify-content: center;
     text-justify: center;    
 }
+
 h1 {
     margin-left: 20px;
     margin-right : 20px; 
@@ -50,7 +54,7 @@ button {
     margin-top: 20px; 
     margin-right: 40px;
     margin-left:40px;
-    margin-bottom: 40px;
+    margin-bottom: 5px;
     cursor: pointer;
     font-size: 10px;
 }
@@ -75,6 +79,64 @@ a:hover {
 }
 a:focus {}
 a:active {}
+
+footer{
+    display: flex;
+    position:inherit;
+    flex-direction: row ;
+    align-items: center;
+    margin-top:20px;
+    margin-left : auto; 
+    margin-right: auto;
+    background-color:#222222;
+    border : solid #630708 5px; 
+    border-radius : 10px;
+    font-family: Cometbus, "Denne's Old Handwriting", "Dirty Ames Dirty Ames", "DIRTY CLASSIC";
+}
+
+.liens{
+    display:flex;
+    position:relative;
+    flex-direction:row;
+     align-items: center;
+    margin-top:5px;
+    margin-bottom:15px;
+    margin-left : auto; 
+    margin-right: auto;
+    background-color:#C8C8C8;
+    color:#222222;
+    border-radius:5px;
+}
+.lien_1{
+    display:flex;
+    margin-left:auto;
+    margin-right:auto;
+}
+.lien_2{
+    display:flex;
+    margin-left:auto;
+    margin-right:auto;
+}
+.lien_3{
+    display:flex;
+    margin-left:auto;
+    margin-right:auto;
+}
+.lien_4{
+    display:flex;
+    margin-left:auto;
+    margin-right:auto;
+}
+.lien_5{
+    display:flex;
+    margin-left:auto;
+    margin-right:auto;
+}
+.lien_6{
+    display:flex;
+    margin-left:auto;
+    margin-right:auto;
+}
 
 .contenant_smiley {
     position : absolute;
@@ -109,7 +171,7 @@ a:active {}
     align-items: center;
     margin-left : auto; 
     margin-right: auto;
-    background-color: #5D5050;
+    background-color: #222222;
     border : solid #630708 5px; 
     border-radius : 10px;
     font-family: Cometbus, "Denne's Old Handwriting", "Dirty Ames Dirty Ames", "DIRTY CLASSIC";
@@ -129,13 +191,21 @@ a:active {}
     float: left;
     flex-direction: column;
     position :relative;
-    height : auto;
-    width : 250px; 
+    height:auto;
+    width : 270px; 
     border : solid #630708 5px; 
     border-radius : 20px; 
     padding : 10px;
-    background-color: #5D5050;
+    background-color: #222222;
 }
+
+.meteo{
+    position: absolute;
+}
+.texte-meteo{
+    position:absolute;
+}
+
 .texte_divers {
     display: flex;
     float: right;
@@ -147,14 +217,19 @@ a:active {}
     border-radius : 20px; 
     margin-top: 20px;
     padding : 10px;
-    background-color: #5D5050;
+    background-color: #222222;
 }
+
 .paris {
     float : left; 
     max-height: 150px;
-    margin-right: 5px;
+    margin-right: 20px;
     margin-top: 5px;
     align-items: center;
+}
+.footer_judo{
+    opacity:0.5;
+    image-repeat: repeat-x;
 }
 
 #divers {
