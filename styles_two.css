@@ -1,0 +1,214 @@
+
+body {
+    background-color: #3C3B3B;
+    color:azure;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+container {
+    margin-left : auto; 
+    margin-right: auto;
+}
+
+header {
+    margin-left : auto; 
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    height: auto;
+}
+
+content {
+    position: relative; 
+    margin-left: auto;
+    margin-right : auto;
+    padding: 5px; 
+    display : flex;
+    flex-direction: column;
+    height: auto;
+}
+
+p {
+    font-family: Arial;
+    font-size: 14px; 
+    justify-content: center;
+    text-justify: center;    
+}
+
+h1 {
+    margin-left: 20px;
+    margin-right : 20px; 
+}
+
+
+button {
+    background-color: #252323;
+    color : azure;
+    height: 100px; 
+    width: 100px;
+    border-radius: 50%;
+    margin-top: 20px; 
+    margin-right: 40px;
+    margin-left:40px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    font-size: 10px;
+}
+
+button.blue{
+    background-color: #4531C2;
+}
+button.green{
+    background-color: #569106;
+}
+button.red{
+    background-color: #970A0D;
+}
+
+
+a:link {}
+a:visited {
+    color: #5C5252;
+}
+a:hover {
+    color: #50A44F;
+}
+a:focus {}
+a:active {}
+
+footer{
+    display: flex;
+    position:relative;
+    flex-direction: row ;
+    align-items: center;
+    margin-top:20px;
+    margin-left : auto; 
+    margin-right: auto;
+    height: 70px;
+    background-color:#222222;
+    border : solid #630708 5px; 
+    border-radius : 10px;
+    font-family: Cometbus, "Denne's Old Handwriting", "Dirty Ames Dirty Ames", "DIRTY CLASSIC";
+}
+
+.home{
+    display:flex;
+    float:left; 
+    max-height:70px;
+}
+
+.liens{
+    display:flex;
+    position:relative;
+    flex-direction:row;
+     align-items: center;
+    margin-top:5px;
+    margin-bottom:15px;
+    margin-left : auto; 
+    margin-right: auto;
+    background-color:#C8C8C8;
+    color:#222222;
+    border-radius:5px;
+}
+.lien_1{
+    display:flex;
+    margin-left:auto;
+    margin-right:auto;
+}
+.lien_2{
+    display:flex;
+    margin-left:auto;
+    margin-right:auto;
+}
+.lien_3{
+    display:flex;
+    margin-left:auto;
+    margin-right:auto;
+}
+.lien_4{
+    display:flex;
+    margin-left:auto;
+    margin-right:auto;
+}
+.lien_5{
+    display:flex;
+    margin-left:auto;
+    margin-right:auto;
+}
+.lien_6{
+    display:flex;
+    margin-left:auto;
+    margin-right:auto;
+}
+.grand_titre {
+    display: flex;
+    flex-direction: row ;
+    align-items: center;
+    margin-left : auto; 
+    margin-right: auto;
+    background-color: #222222;
+    border : solid #630708 5px; 
+    border-radius : 10px;
+    font-family: Cometbus, "Denne's Old Handwriting", "Dirty Ames Dirty Ames", "DIRTY CLASSIC";
+}
+
+.bleue{
+    display:flex;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    border: solid black 30px;
+}
+#gemme_bleue{
+    max-width:350px;
+}
+
+.rouge{
+    display:flex;
+    position: relative;
+    float: left;
+    margin-top: -150px;
+    margin-right: auto; 
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    border: solid black 30px;
+}
+#gemme_rouge{
+    max-width:350px;
+}
+.vert{
+    display:flex;
+    position: relative;
+    float: right;
+    margin-top: -150px;
+    margin-left: auto;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    border: solid black 30px;
+}
+#gemme_vert{
+    max-width:350px;
+}
+
+.violet{
+    display:flex;
+    margin-top: -150px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    border: solid black 30px;
+}
+#gemme_violet{
+    max-width:350px;
+}
