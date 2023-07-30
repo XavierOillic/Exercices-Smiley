@@ -27,6 +27,7 @@ content {
     position: relative; 
     margin-left: auto;
     margin-right : auto;
+    padding: 5px; 
     display : flex;
     flex-direction: row;
     height: auto;
@@ -88,10 +89,17 @@ footer{
     margin-top:20px;
     margin-left : auto; 
     margin-right: auto;
+    height: 70px;
     background-color:#222222;
     border : solid #630708 5px; 
     border-radius : 10px;
     font-family: Cometbus, "Denne's Old Handwriting", "Dirty Ames Dirty Ames", "DIRTY CLASSIC";
+}
+
+.home{
+    display:flex;
+    float:left; 
+    max-height:70px;
 }
 
 .liens{
@@ -136,6 +144,10 @@ footer{
     display:flex;
     margin-left:auto;
     margin-right:auto;
+}
+
+.content{
+    background-image: url("images/figeac.png")
 }
 
 .contenant_smiley {
@@ -197,6 +209,7 @@ footer{
     border-radius : 20px; 
     padding : 10px;
     background-color: #222222;
+    opacity: 0.6;
 }
 
 .meteo{
@@ -218,6 +231,7 @@ footer{
     margin-top: 20px;
     padding : 10px;
     background-color: #222222;
+    opacity: 0.7;
 }
 
 .paris {
@@ -226,10 +240,6 @@ footer{
     margin-right: 20px;
     margin-top: 5px;
     align-items: center;
-}
-.footer_judo{
-    opacity:0.5;
-    image-repeat: repeat-x;
 }
 
 #divers {
