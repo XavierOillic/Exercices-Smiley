@@ -11,15 +11,15 @@
 
 // document.body.remoceChild(titre)
 // =====> supprime littéralement un élement.
-const titre = document.querySelector('#titre')
-const texte = document.body.getElementsByTagName('p')
 
 const newText = document.createTextNode("Hello, c'est moi !")
-console.log('newText')
 document.body.appendChild(newText)
-const footer = document.querySelector('#footer')
+
 // document.insertBefore(newText, titre)
 // document.replaceChild(newText, texte)
+
+// ==============================================================
+// ==============================================================
 
 function ajouterText (pseudo, monText) {
   const newText23 = document.createElement('p')
@@ -32,17 +32,68 @@ ajouterText('Arthur', 'AAAAAAAAAAAAAAAAAAAAAAAAA')
 ajouterText('Marie', 'MMMMMMMMMMMMMMMMMMMMMMMM')
 ajouterText('Ewen', 'EEEEEEEEEEEEEEEEEEEEEEEEE')
 
-const lien34 = document.querySelector('.lien_3')
+// ==============================================================
+// ==============================================================
+
+const lien34 = document.body.getElementsByTagName('a')[3]
 lien34.setAttribute('href', 'https://www.udemy.com/join/login-popup/?next=/home/my-courses/')
 
 // avec SETATTRIBUTE, je peux changer le lien à l'interieur de l'attribut.
 // console.log(lien34.getAttribute('href'))
-// console.log(titre.getAttribute('id'))
 
-console.log(lien34)
+// ==============================================================
+// ==============================================================
+
+/*
+const texte = document.body.getElementsByTagName('p')
+// Je stocke dans TEXTE tout ce que contient les paragraphes
 
 const textArray = Array.from(texte)
-console.log(textArray)
+
 // J'ai transformé les paragraphes en ARRAY pour pouvoir utiliser le MAP.
 textArray.map(paragraphe => paragraphe.innerHTML = "Ah AH AH , je t'ai hacké !")
 // Et avec cette ligne, je MAP les paragraphes que j'ai transformé en ARRAY.
+
+*/
+// ==============================================================
+// ==============================================================
+// AVEC UN BOUTON, JE CHANGE LE CONTENU DES TITRES.
+
+const titre = document.body.getElementsByTagName('h1')
+const buttonUn = document.querySelector('#divers_un')
+
+buttonUn.addEventListener('click', changerContenuTitre)
+function changerContenuTitre (titreArray) {
+  titreArray = Array.from(titre) // Avec le ARRAY.FROM, JE TRANSFORME LES TITRES RECUPERES GRACE 
+  titreArray.map(grosTitre => grosTitre.innerHTML = "JE CHANGE LE TiTRE : AH AH AH AH !")
+}
+
+// ===========================================================================
+// ===========================================================================
+// titre.style.color = '#000'
+// titre.style.boxShadow = '2px 2px 10px rgba(0,0,0,0.3)'
+// JE PEUX MODIFIER lE CSS DANS LE JS : Je nomme l'element récupéré byTAG, et je dis ce que je veux changer
+// ============================================================================
+// ============================================================================
+
+const titre81 = document.querySelector('h2')
+const liens93 = document.querySelectorAll('a')
+// avec le [7], je selectionnes le A concerné par l'action que je veux lui faire faire
+// avec ce premier bouton/lien, j'ajoute une CLASSE au titre H2
+liens93[7].addEventListener('click', function () {
+  titre81.classList.add("blue")
+})
+
+liens93[8].addEventListener('click', function () {
+  titre81.classList.remove("blue")
+})
+
+liens93[9].addEventListener('click', function () {
+  titre81.classList.toggle("blue")
+})
+
+// REMOVE ==> REMPLACE
+// ADD ==> AJOUTE
+// TOGGLE ==> AJOUTE ET ENLEVE AVEC LE MEME BOUTON
+// ============================================================================
+// ============================================================================
