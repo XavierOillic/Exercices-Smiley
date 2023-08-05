@@ -11,6 +11,7 @@ body {
 container {
     margin-left : auto; 
     margin-right: auto;
+    max-width: 900px;
 }
 
 header {
@@ -105,7 +106,7 @@ footer{
     display:flex;
     position:relative;
     flex-direction:row;
-     align-items: center;
+    align-items: center;
     margin-top:5px;
     margin-bottom:15px;
     margin-left : auto; 
@@ -211,4 +212,26 @@ footer{
 }
 #gemme_violet{
     max-width:350px;
+}
+
+#terrain_de_jeu{
+    display:flex;
+    margin-left:auto;
+    margin-right: auto;
+    height: 400px;
+    width:600px;
+    border-radius: 10px;
+    border: 10px solid #630708;
+    background-color: #569106;
+}
+#titre_qui_se_déplace{
+    font-family: Arial;
+    font-size: 10px;
+    width: 100px; 
+    height: 40px;
+    border: 3px solid #630708; 
+    color :aliceblue;
+    margin: 0px;
+    text-align: center;
+    align-items: center;
 }
