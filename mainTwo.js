@@ -1,3 +1,12 @@
+const lien6 = document.querySelector('.lien6')
+lien6.addEventListener('click', function () {
+  prompt ('Coucou !')
+})
+
+// ==================================================================================
+// ==================================================================================
+
+
 const titre = document.querySelector("h2")
 const terrain = document.querySelector("#terrain_de_jeu")
 const maxHeight = terrain.clientHeight
@@ -40,3 +49,6 @@ function animationBis () {
   requestAnimationFrame(animationBis)
 }
 requestAnimationFrame(animationBis)
+
+// ====================================================================================
+// ====================================================================================

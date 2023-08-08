@@ -1,3 +1,11 @@
+const lien6 = document.querySelector('.lien6')
+lien6.addEventListener('click', function () {
+  prompt ('Coucou !')
+})
+
+// ==========================================================================================
+// ===================================================================================
+
 // const barreGauche = document.querySelector('#barre_gch')
 // const barreDroite = document.querySelector('#barre_drte')
 const terrainJeu = document.querySelector('#terrain_de_jeu')

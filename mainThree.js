@@ -1,3 +1,11 @@
+const lien6 = document.querySelector('.lien6')
+lien6.addEventListener('click', function () {
+  prompt ('Coucou !')
+})
+
+// =================================================================================
+// =================================================================================
+
 // JavaScript Document
 // TAG = BALISE
 // const titre = document.getElementsByTagName("h1")

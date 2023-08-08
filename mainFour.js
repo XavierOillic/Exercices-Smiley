@@ -14,6 +14,8 @@ lien6.addEventListener('click', function () {
   prompt ('Coucou !')
 })
 
+// ================================================================================
+// ================================================================================
 // Je fais apparaitre un POPUP grace à un boutton.
 
 const buttonPopup = document.querySelector('#divers_un')
