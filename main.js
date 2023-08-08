@@ -99,3 +99,10 @@ changerMeteo()
 // document.body....
 // Je précise l'adressage de ce que je veux.
 // =========================================================================================================================
+
+const lien6 = document.querySelector('.lien6')
+lien6.addEventListener('click', function () {
+  prompt ('Coucou !')
+})
+
+// =========================================================================================================================
