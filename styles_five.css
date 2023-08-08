@@ -1,4 +1,3 @@
-/* CSS Document */
 
 body {
     background-color: #3C3B3B;
@@ -30,7 +29,7 @@ content {
     margin-right : auto;
     padding: 5px; 
     display : flex;
-    flex-direction: row;
+    flex-direction: column;
     height: auto;
 }
 
@@ -50,8 +49,8 @@ h1 {
 button {
     background-color: #252323;
     color : azure;
-    height: 100px; 
-    width: 100px;
+    height: 90px; 
+    width: 90px;
     border-radius: 50%;
     margin-top: 20px; 
     margin-right: 40px;
@@ -72,18 +71,22 @@ button.red{
 }
 
 
-a:link {}
+a:link {
+    color:#630708;
+}
 a:visited {
     color: #5C5252;
 }
 a:hover {
     color: #50A44F;
 }
-a:active {}
+a:active {
+    color:azure;
+}
 
 footer{
     display: flex;
-    position:inherit;
+    position:relative;
     flex-direction: row ;
     align-items: center;
     margin-top:20px;
@@ -106,7 +109,7 @@ footer{
     display:flex;
     position:relative;
     flex-direction:row;
-     align-items: center;
+    align-items: center;
     margin-top:5px;
     margin-bottom:15px;
     margin-left : auto; 
@@ -145,38 +148,6 @@ footer{
     margin-left:auto;
     margin-right:auto;
 }
-
-.content{
-    background-image: url("images/figeac.png")
-}
-
-.contenant_smiley {
-    position : absolute;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.smiley {
-    position:relative;
-    display : flex;
-    float: right;
-    background-color: #000000;
-    border-radius: 2000px; 
-    border: solid 10px black; 
-    margin-left: auto;
-    margin-right: auto;
-    height: auto;
-}
-
-.bouton {
-    display: flex;
-    height:100px; 
-    width:100px; 
-    margin-left: 20px; 
-    margin-right: 40px;
-}
-
 .grand_titre {
     display: flex;
     flex-direction: row ;
@@ -189,78 +160,48 @@ footer{
     font-family: Cometbus, "Denne's Old Handwriting", "Dirty Ames Dirty Ames", "DIRTY CLASSIC";
 }
 
-.plusieurs_bouttons {
-    display: flex;
-    flex-direction: row ;
-    align-items: center;
-    margin-left : auto; 
-    margin-right: auto;
-    position : relative;
+#terrain_de_jeu{
+  display : flex;
+  margin-left: auto;
+  margin-right: auto;
+  height: 700px;
+  width: 800px;
+  background-color: #4531C2;
+  border-radius:20px;
+  border: solid 15px #630708;
 }
 
-.meteo_symboles {
-    display: flex;
-    float: left;
-    flex-direction: column;
+#barre_gch{
+    display:flex;
+    float:left;
     position :relative;
-    height:auto;
-    width : 270px; 
-    border : solid #630708 5px; 
-    border-radius : 20px; 
-    padding : 10px;
-    background-color: #222222;
-    opacity: 0.6;
+    height:70px;
+    width:10px;
+    border-radius:5px;
+    border: solid 2px #C8C8C8;
+    background-color: #C8C8C8;
+    align-items: left;
+    margin-left: Opx;
+    margin-right: 780px;
 }
 
-.meteo{
-    position: absolute;
-}
-.texte-meteo{
-    position:absolute;
-}
-
-.texte_divers {
-    display: flex;
-    float: right;
-    flex-direction: row;
-    position : relative;
-    height : auto;
-    width : 500px; 
-    border : solid #630708 5px; 
-    border-radius : 20px; 
-    margin-top: 20px;
-    padding : 10px;
-    background-color: #222222;
-    opacity: 0.7;
+#barre_drte{
+    display:flex;
+    float:right;
+    position :relative;
+    height:70px;
+    width:10px;
+    border-radius:5px;
+    border: solid 2px #C8C8C8;
+    background-color: #C8C8C8;
 }
 
-.paris {
-    float : left; 
-    max-height: 150px;
-    margin-right: 20px;
-    margin-top: 5px;
+#balle{
+    height:70px;
+    width:70px;
+    border-radius:50%;
+    background-color: #252323;
+    margin:0px;
+    text-align: center;
     align-items: center;
 }
-
-#divers {
-    background-image: image()
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

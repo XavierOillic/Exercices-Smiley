@@ -19,7 +19,7 @@ document.body.appendChild(newText)
 // document.replaceChild(newText, texte)
 
 // ==============================================================
-// ==============================================================
+// ============== AJOUTER Du TEXTE ===============================
 
 function ajouterText (pseudo, monText) {
   const newText23 = document.createElement('p')
@@ -43,7 +43,6 @@ lien34.setAttribute('href', 'https://www.udemy.com/join/login-popup/?next=/home/
 
 // ==============================================================
 // ==============================================================
-
 /*
 const texte = document.body.getElementsByTagName('p')
 // Je stocke dans TEXTE tout ce que contient les paragraphes
@@ -53,7 +52,6 @@ const textArray = Array.from(texte)
 // J'ai transformé les paragraphes en ARRAY pour pouvoir utiliser le MAP.
 textArray.map(paragraphe => paragraphe.innerHTML = "Ah AH AH , je t'ai hacké !")
 // Et avec cette ligne, je MAP les paragraphes que j'ai transformé en ARRAY.
-
 */
 // ==============================================================
 // ==============================================================
@@ -97,3 +95,51 @@ liens93[9].addEventListener('click', function () {
 // TOGGLE ==> AJOUTE ET ENLEVE AVEC LE MEME BOUTON
 // ============================================================================
 // ============================================================================
+// ICI JE CHANGE LA COULEUR DU TEXTE.
+
+const couleurDuTexte = document.querySelector('container')
+const bouttonDeux = document.querySelector('#divers_deux')
+
+bouttonDeux.addEventListener('click', changerTextColor)
+
+function changerTextColor () {
+  couleurDuTexte.classList.toggle('green')
+}
+console.log(changerTextColor)
+
+// ===============================================================================
+// ===============================================================================
+
+const buttonTrois = document.querySelector('#divers_trois')
+const contenant = document.getElementById('container')
+buttonTrois.addEventListener('click', changerCouleurFond)
+
+function changerCouleurFond () {
+}
+console.log(changerCouleurFond)
+
+// ===============================================================================
+// ===============================================================================
+
+/*
+
+function watchColorPicker(event) {
+  document.querySelectorAll("p").forEach(function (p) {
+    p.style.color = event.target.value;
+  });
+}
+        <script>
+            function changeColor(color) { 
+                document.body.style.background = color; 
+            }
+        </script>
+    </head>
+    <body style = "text-align:center;"> 
+        <h1>WayToLearn<span style="color:red">X</span>.com</h1>
+        <p><b>Cliquez sur le bouton pour changer la couleur du background.</b></p> 
+        <button onclick = "changeColor('blue');">Bleu</button>
+        <button onclick = "changeColor('green');">Vert</button> 
+        <button onclick = "changeColor('red');">Rouge</button>
+        <button onclick = "changeColor('yellow');">Jaune</button> 
+    </body>
+*/

@@ -49,12 +49,12 @@ h1 {
 button {
     background-color: #252323;
     color : azure;
-    height: 80px; 
-    width: 80px;
+    height: 100px; 
+    width: 100px;
     border-radius: 50%;
     margin-top: 5px; 
-    margin-right: auto;
-    margin-left: auto;
+    margin-right: 20px;
+    margin-left: 20px;
     margin-bottom: 5px;
     cursor: pointer;
     font-size: 10px;
@@ -126,7 +126,7 @@ footer{
     position:relative;
     flex-direction:row;
     align-items: center;
-    width: auto;
+    max-width: 900px;
     margin-top:5px;
     margin-bottom:5px;
     margin-left : auto; 
@@ -137,6 +137,12 @@ footer{
 }
 .blue{
     color: #3e3384;
+}
+.green{
+    color:#50A44F;
+}
+.purple{
+    color:#3e3384;
 }
 #divers, #divers_deux, #divers_trois, #divers_quatre{
     display: flex;
