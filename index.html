@@ -19,7 +19,7 @@
         
             <div class="plusieurs_bouttons">
                 
-                <button type="button" id="divers"> Click...</button>
+                <button type="button" id="open_form_button" class="open_button">Click here <br/> to LOGIN !</button>
                 
                 <button type="button" id="meteoTypeButton"> Click to change <br/> météo Icones</button>
                 
@@ -40,7 +40,25 @@
         <p class="lien_5"><a href="pagefive.html">...vers page five !</a></p>
         <p class="lien_6"><a class="lien6" href="#">ALERT </br> COUCOU ! </a></p>
     </div>
-    
+
+
+    <div id="login_popup" class="form_popup">
+        <div id="formulaire">
+
+           <form action ="/action_page.php" class="form_content">
+                <h2>Déjà inscrit ?! Saisissez votre identifiant et votre Mot de passe.</br>
+                Sinon,<a href="page_inscription.html"> veuillez créer votre compte...</a> </h2>
+                    <label for="email"><strong> ici, votre Email...</strong></label>
+                        <input type="text" id="email" placeholder="Votre Email" name="email" required/>
+                    <label for="Password"><strong>Mot de Passe</strong></label>
+                        <input type="password" id="password" placeholder="Votre Mot de Passe" name="password" required/>
+                <button type="submit" class="button" id="connecter">Connection</button>
+                <button type="reset" class="btn_cancel" id="annuler">Annuler</button>
+           </form> 
+
+        </div>
+    </div>
+
     
     <content class="content">
         <div class="encart_gauche">

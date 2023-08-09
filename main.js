@@ -106,3 +106,22 @@ lien6.addEventListener('click', function () {
 })
 
 // =========================================================================================================================
+// ========================FORMULAIRE D'INSRIPTION ==============================================================
+// ====================== APPARITION ==== DISPARITION ==================================================
+
+const openButton = document.querySelector('#open_form_button')
+const loginPopUp = document.querySelector('#login_popup')
+
+openButton.addEventListener('click', function () {
+  loginPopUp.style.display = 'block'
+})
+
+const closeButton = document.querySelector('#annuler')
+const closePopUp = document.querySelector('#login_popup')
+
+closeButton.addEventListener('click', function () {
+  closePopUp.style.display = 'none'
+})
+
+// =====================================================================================
+// ======================================================================================
